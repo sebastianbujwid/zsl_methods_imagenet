@@ -1,0 +1,19 @@
+env:
+  load_img_feats_to_memory: False
+
+  output_dir: '/PATH/zsl_methods_imagenet/local_runs/develop1'
+
+  # Source: https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/zero-shot-learning/zero-shot-learning-the-good-the-bad-and-the-ugly/
+  ## (ILSVRC2012_res101_feature.mat)
+  imagenet_1k: '/PATH/data/zsl/zsl_a_comprehensive_evaluation/ILSVRC2012_res101_feature.mat'
+  ## (ImageNet2011_res101_feature.zip)
+  imagenet_20k_dir: '/PATH/data/zsl/zsl_a_comprehensive_evaluation/imagenet_feats_all/'
+  ## (xlsa17.zip)
+  imagenet_class_splits: '/PATH/data/zsl/zsl_a_comprehensive_evaluation/ImageNet_splits.mat'
+
+  # Original source: https://github.com/pujols/zero-shot-learning
+  ## (Converted Pickle available: https://kth.box.com/s/toc5x1j8vtykbxajxp5p2iuomcgarfik)
+  imagenet_w2v_extra_pkl: '/PATH/data/zsl/synthetized_classifiers_for_zsl/ImageNet_w2v/ImageNet_w2v_extra.pkl'
+
+
+  aux_feats: '???'

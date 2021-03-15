@@ -1,0 +1,3 @@
+CadaVAE:
+  LinearClassifier:
+    weight_decay:

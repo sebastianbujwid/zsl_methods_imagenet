@@ -1,0 +1,57 @@
+exp_name: 'lexp_run001'
+
+CadaVAE:
+
+  #generalized_zsl: True  # If False adjust 'num_aux_samples_per_class'
+  generalized_zsl: False  # If False adjust 'num_aux_samples_per_class'
+
+  evaluate_every_n_epochs: 5
+
+  VAE:
+    learning_rate: 0.00015
+    epochs: 100
+    latent_size: 128
+    batch_size: 128
+    reconstruction_loss: 'L1'
+
+    #beta_coefficient:
+    #  start_epoch: 0
+    #  end_epoch: 93
+    #  factor: 0.25
+    beta_coefficient: 1.  # changed!
+    cross_reconstruction_coefficient:
+      start_epoch: 21
+      end_epoch: 75
+      factor: 2.37
+    distribution_alignment_coefficient:
+      start_epoch: 6
+      end_epoch: 22
+      factor: 8.13
+
+  ImgFeatVAE:
+    encoder_hidden: [1560, 1560]
+    decoder_hidden: [1660]
+    # decoder_hidden: [1160, 1660]
+    kernel_initializer:
+      type: 'GlorotUniform'
+      gain: 0.5
+
+  AuxDataVAE:
+    encoder_hidden: [1450, 660]
+    decoder_hidden: [460, 660]
+    kernel_initializer:
+      type: 'GlorotUniform'
+      gain: 0.5
+
+  LinearClassifier:
+    learning_rate: 0.001
+    weight_decay:
+    batch_size: 32
+    # epochs: 1
+    epochs: 20
+    #num_samples_per_class: 200
+    num_img_samples_per_class: 200  # Is effectively 0 if 'generalized_zsl' is False # default 200
+    num_aux_samples_per_class: 200  # default 400 for GZL, 200 for ZSL
+    kernel_initializer:
+      type: 'GlorotUniform'
+      gain: 0.5

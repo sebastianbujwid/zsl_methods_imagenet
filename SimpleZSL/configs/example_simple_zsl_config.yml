@@ -1,0 +1,14 @@
+exp_name: 'szsl_run001'
+
+SimpleZSL:
+  target_space_size: 128
+  margin: 1.0
+
+  epochs: 100
+  batch_size: 64
+
+  optim:
+    lr: 0.001
+    beta_1: 0.5
+    beta_2: 0.999
+    epsilon: 1e-08
