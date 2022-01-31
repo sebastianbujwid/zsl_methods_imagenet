@@ -8,7 +8,7 @@ Zero-shot learning methods for ImageNet:
 
 Config files in "config" folders are just examples.
 Config files and models used in our experiments are available to download:
-[Config files and models](https://kth.box.com/s/coeguix1cyk2umf3ba0z16nju70dgx28)
+[Config files and models](https://kth-my.sharepoint.com/:f:/g/personal/bujwid_ug_kth_se/EjLfX-VHCsZOgZrO8F6SqDUB4yxaRsmflyY9jg_A47R84w?e=nk5D6A)
 
 ## Conda environment
 
