@@ -10,6 +10,8 @@ Config files in "config" folders are just examples.
 Config files and models used in our experiments are available to download:
 [Config files and models](https://kth-my.sharepoint.com/:f:/g/personal/bujwid_ug_kth_se/EjLfX-VHCsZOgZrO8F6SqDUB4yxaRsmflyY9jg_A47R84w?e=nk5D6A)
 
+`aux_feats` files with encoded class auxiliary (text) features were from: [`aux_feats` pickle files (See _Encoded Wikipedia articles (extracted features)_)](https://github.com/sebastianbujwid/zsl_text_imagenet#download-encoded-text-from-wikipedia-articles)
+
 ## Conda environment
 
 [conda.yml](./conda.yaml) contains a Conda environment used for the project.

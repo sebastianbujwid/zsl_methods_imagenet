@@ -16,4 +16,5 @@ env:
   imagenet_w2v_extra_pkl: '/PATH/data/zsl/synthetized_classifiers_for_zsl/ImageNet_w2v/ImageNet_w2v_extra.pkl'
 
 
-  aux_feats: '???'
+  aux_feats: '???'  # See `.pkl` files in: https://github.com/sebastianbujwid/zsl_text_imagenet#download-encoded-text-from-wikipedia-articles
+
